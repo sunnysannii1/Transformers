@@ -3,27 +3,83 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EEA456F90C085C251DDADAA /* Pods_Transformers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F49AA0767BEE23DBB4B49B /* Pods_Transformers.framework */; };
 		FA23A7312639518E00AD8BAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23A7302639518E00AD8BAD /* AppDelegate.swift */; };
-		FA23A7332639518E00AD8BAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23A7322639518E00AD8BAD /* SceneDelegate.swift */; };
-		FA23A7352639518E00AD8BAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23A7342639518E00AD8BAD /* ViewController.swift */; };
 		FA23A7382639518E00AD8BAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA23A7362639518E00AD8BAD /* Main.storyboard */; };
 		FA23A73A2639518F00AD8BAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA23A7392639518F00AD8BAD /* Assets.xcassets */; };
 		FA23A73D2639518F00AD8BAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA23A73B2639518F00AD8BAD /* LaunchScreen.storyboard */; };
+		FA23A750263952D500AD8BAD /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23A749263952D500AD8BAD /* EndPoints.swift */; };
+		FA23A751263952D500AD8BAD /* RequestTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23A74A263952D500AD8BAD /* RequestTypes.swift */; };
+		FA23A753263952D500AD8BAD /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23A74D263952D500AD8BAD /* ServiceManager.swift */; };
+		FA23A754263952D500AD8BAD /* requestParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23A74E263952D500AD8BAD /* requestParser.swift */; };
+		FA23A755263952D500AD8BAD /* NetworkProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23A74F263952D500AD8BAD /* NetworkProxy.swift */; };
+		FA23A75F263953AC00AD8BAD /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA23A75E263953AC00AD8BAD /* Colors.xcassets */; };
+		FA23A7632639540500AD8BAD /* UIViewController+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23A7622639540500AD8BAD /* UIViewController+ext.swift */; };
+		FA23A7662639541800AD8BAD /* UIStoryboard+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23A7652639541800AD8BAD /* UIStoryboard+ext.swift */; };
+		FA23A7692639544C00AD8BAD /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23A7682639544C00AD8BAD /* BaseVC.swift */; };
+		FA23A76D263954A900AD8BAD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23A76C263954A900AD8BAD /* Constants.swift */; };
+		FA23A7722639567800AD8BAD /* USER.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23A7712639567800AD8BAD /* USER.swift */; };
+		FA23A794263972A900AD8BAD /* AppUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23A793263972A900AD8BAD /* AppUtil.swift */; };
+		FA23A79E2639732700AD8BAD /* UIWindow+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23A79D2639732700AD8BAD /* UIWindow+ext.swift */; };
+		FA23A7A22639748300AD8BAD /* AddTransformerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23A7A12639748300AD8BAD /* AddTransformerVC.swift */; };
+		FA23A7A726397BAD00AD8BAD /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23A7A626397BAD00AD8BAD /* Router.swift */; };
+		FA23A7AC26397EC100AD8BAD /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23A7AB26397EC100AD8BAD /* BaseViewModel.swift */; };
+		FA23A7B326397F8400AD8BAD /* AddTransformerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23A7B226397F8400AD8BAD /* AddTransformerViewModel.swift */; };
+		FA23A7B626397F9900AD8BAD /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23A7B526397F9900AD8BAD /* Transformer.swift */; };
+		FA23A7BF2639883E00AD8BAD /* StartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23A7BE2639883E00AD8BAD /* StartRouter.swift */; };
+		FA23A7C32639885200AD8BAD /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23A7C22639885200AD8BAD /* StartVC.swift */; };
+		FA41CED32639907600F90975 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41CED22639907600F90975 /* Validator.swift */; };
+		FAD58B23263AB612003E3A97 /* TransformerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD58B22263AB612003E3A97 /* TransformerList.swift */; };
+		FAD58B26263AB639003E3A97 /* TransformerListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD58B25263AB639003E3A97 /* TransformerListRouter.swift */; };
+		FAD58B32263AB6A0003E3A97 /* TransformerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD58B31263AB6A0003E3A97 /* TransformerListViewModel.swift */; };
+		FAD58B35263AC161003E3A97 /* TransformerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD58B34263AC161003E3A97 /* TransformerCell.swift */; };
+		FAD58B38263ACA6D003E3A97 /* TransformerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD58B37263ACA6D003E3A97 /* TransformerDataSource.swift */; };
+		FAD58B3C263AD3F4003E3A97 /* StartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD58B3B263AD3F4003E3A97 /* StartViewModel.swift */; };
+		FAD58B4D263B208F003E3A97 /* RageWarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD58B4C263B208F003E3A97 /* RageWarVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		73F49AA0767BEE23DBB4B49B /* Pods_Transformers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Transformers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88AD4118F3732CF7CFA7C9F4 /* Pods-Transformers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transformers.release.xcconfig"; path = "Target Support Files/Pods-Transformers/Pods-Transformers.release.xcconfig"; sourceTree = "<group>"; };
+		C7348EA24220F80B2B5AAC5A /* Pods-Transformers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transformers.debug.xcconfig"; path = "Target Support Files/Pods-Transformers/Pods-Transformers.debug.xcconfig"; sourceTree = "<group>"; };
 		FA23A72D2639518E00AD8BAD /* Transformers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transformers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA23A7302639518E00AD8BAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA23A7322639518E00AD8BAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA23A7342639518E00AD8BAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA23A7372639518E00AD8BAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA23A7392639518F00AD8BAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA23A73C2639518F00AD8BAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA23A73E2639518F00AD8BAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA23A749263952D500AD8BAD /* EndPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		FA23A74A263952D500AD8BAD /* RequestTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestTypes.swift; sourceTree = "<group>"; };
+		FA23A74D263952D500AD8BAD /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		FA23A74E263952D500AD8BAD /* requestParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = requestParser.swift; sourceTree = "<group>"; };
+		FA23A74F263952D500AD8BAD /* NetworkProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProxy.swift; sourceTree = "<group>"; };
+		FA23A75E263953AC00AD8BAD /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		FA23A7622639540500AD8BAD /* UIViewController+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ext.swift"; sourceTree = "<group>"; };
+		FA23A7652639541800AD8BAD /* UIStoryboard+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+ext.swift"; sourceTree = "<group>"; };
+		FA23A7682639544C00AD8BAD /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		FA23A76C263954A900AD8BAD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FA23A7712639567800AD8BAD /* USER.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USER.swift; sourceTree = "<group>"; };
+		FA23A793263972A900AD8BAD /* AppUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtil.swift; sourceTree = "<group>"; };
+		FA23A79D2639732700AD8BAD /* UIWindow+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+ext.swift"; sourceTree = "<group>"; };
+		FA23A7A12639748300AD8BAD /* AddTransformerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransformerVC.swift; sourceTree = "<group>"; };
+		FA23A7A626397BAD00AD8BAD /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		FA23A7AB26397EC100AD8BAD /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		FA23A7B226397F8400AD8BAD /* AddTransformerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransformerViewModel.swift; sourceTree = "<group>"; };
+		FA23A7B526397F9900AD8BAD /* Transformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transformer.swift; sourceTree = "<group>"; };
+		FA23A7BE2639883E00AD8BAD /* StartRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartRouter.swift; sourceTree = "<group>"; };
+		FA23A7C22639885200AD8BAD /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
+		FA41CED22639907600F90975 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		FAD58B22263AB612003E3A97 /* TransformerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerList.swift; sourceTree = "<group>"; };
+		FAD58B25263AB639003E3A97 /* TransformerListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerListRouter.swift; sourceTree = "<group>"; };
+		FAD58B31263AB6A0003E3A97 /* TransformerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerListViewModel.swift; sourceTree = "<group>"; };
+		FAD58B34263AC161003E3A97 /* TransformerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerCell.swift; sourceTree = "<group>"; };
+		FAD58B37263ACA6D003E3A97 /* TransformerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerDataSource.swift; sourceTree = "<group>"; };
+		FAD58B3B263AD3F4003E3A97 /* StartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewModel.swift; sourceTree = "<group>"; };
+		FAD58B4C263B208F003E3A97 /* RageWarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RageWarVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +87,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EEA456F90C085C251DDADAA /* Pods_Transformers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23E917B61495C18B69DBDD5B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7348EA24220F80B2B5AAC5A /* Pods-Transformers.debug.xcconfig */,
+				88AD4118F3732CF7CFA7C9F4 /* Pods-Transformers.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3FF56EC5CE49D7A273BFE2BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73F49AA0767BEE23DBB4B49B /* Pods_Transformers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FA23A7242639518E00AD8BAD = {
 			isa = PBXGroup;
 			children = (
 				FA23A72F2639518E00AD8BAD /* Transformers */,
 				FA23A72E2639518E00AD8BAD /* Products */,
+				23E917B61495C18B69DBDD5B /* Pods */,
+				3FF56EC5CE49D7A273BFE2BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +133,232 @@
 			isa = PBXGroup;
 			children = (
 				FA23A7302639518E00AD8BAD /* AppDelegate.swift */,
-				FA23A7322639518E00AD8BAD /* SceneDelegate.swift */,
-				FA23A7342639518E00AD8BAD /* ViewController.swift */,
-				FA23A7362639518E00AD8BAD /* Main.storyboard */,
+				FA23A75C2639537100AD8BAD /* Views */,
+				FA23A75D2639538100AD8BAD /* Controllers */,
+				FA23A7A526397B9B00AD8BAD /* Router */,
+				FA23A7AA26397EAA00AD8BAD /* Base */,
+				FA23A748263952D500AD8BAD /* Network */,
+				FA23A7922639729600AD8BAD /* Util */,
+				FA23A75B2639536600AD8BAD /* Extentions */,
+				FA23A76B2639549900AD8BAD /* Constants */,
 				FA23A7392639518F00AD8BAD /* Assets.xcassets */,
-				FA23A73B2639518F00AD8BAD /* LaunchScreen.storyboard */,
+				FA23A75E263953AC00AD8BAD /* Colors.xcassets */,
 				FA23A73E2639518F00AD8BAD /* Info.plist */,
 			);
 			path = Transformers;
+			sourceTree = "<group>";
+		};
+		FA23A748263952D500AD8BAD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FA23A749263952D500AD8BAD /* EndPoints.swift */,
+				FA23A74A263952D500AD8BAD /* RequestTypes.swift */,
+				FA23A74B263952D500AD8BAD /* Models */,
+				FA23A74D263952D500AD8BAD /* ServiceManager.swift */,
+				FA23A74E263952D500AD8BAD /* requestParser.swift */,
+				FA23A74F263952D500AD8BAD /* NetworkProxy.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FA23A74B263952D500AD8BAD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA23A7712639567800AD8BAD /* USER.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA23A75B2639536600AD8BAD /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				FA23A7622639540500AD8BAD /* UIViewController+ext.swift */,
+				FA23A7652639541800AD8BAD /* UIStoryboard+ext.swift */,
+				FA23A79D2639732700AD8BAD /* UIWindow+ext.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		FA23A75C2639537100AD8BAD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA23A73B2639518F00AD8BAD /* LaunchScreen.storyboard */,
+				FA23A7362639518E00AD8BAD /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA23A75D2639538100AD8BAD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FAD58B49263B206C003E3A97 /* War */,
+				FA23A7BB2639881500AD8BAD /* StartVC */,
+				FA23A78B26395F7A00AD8BAD /* AddTransformer */,
+				FA23A78A26395F6F00AD8BAD /* TranformerList */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FA23A76B2639549900AD8BAD /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FA23A76C263954A900AD8BAD /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		FA23A78A26395F6F00AD8BAD /* TranformerList */ = {
+			isa = PBXGroup;
+			children = (
+				FA41CEE6263A1B7600F90975 /* Router */,
+				FA41CEE5263A1B7000F90975 /* ViewModel */,
+				FA41CEE4263A1B6900F90975 /* Controller */,
+			);
+			path = TranformerList;
+			sourceTree = "<group>";
+		};
+		FA23A78B26395F7A00AD8BAD /* AddTransformer */ = {
+			isa = PBXGroup;
+			children = (
+				FA23A7B126397F6900AD8BAD /* Model */,
+				FA23A7B026397F6200AD8BAD /* ViewModel */,
+				FA23A7AF26397F5B00AD8BAD /* Controller */,
+			);
+			path = AddTransformer;
+			sourceTree = "<group>";
+		};
+		FA23A7922639729600AD8BAD /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				FA23A793263972A900AD8BAD /* AppUtil.swift */,
+				FA41CED22639907600F90975 /* Validator.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		FA23A7A526397B9B00AD8BAD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FA23A7A626397BAD00AD8BAD /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FA23A7AA26397EAA00AD8BAD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FA23A7682639544C00AD8BAD /* BaseVC.swift */,
+				FA23A7AB26397EC100AD8BAD /* BaseViewModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		FA23A7AF26397F5B00AD8BAD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA23A7A12639748300AD8BAD /* AddTransformerVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA23A7B026397F6200AD8BAD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA23A7B226397F8400AD8BAD /* AddTransformerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FA23A7B126397F6900AD8BAD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA23A7B526397F9900AD8BAD /* Transformer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA23A7BB2639881500AD8BAD /* StartVC */ = {
+			isa = PBXGroup;
+			children = (
+				FAD58B3A263AD3E1003E3A97 /* ViewModel */,
+				FA23A7BD2639882B00AD8BAD /* Router */,
+				FA23A7BC2639881E00AD8BAD /* Controller */,
+			);
+			path = StartVC;
+			sourceTree = "<group>";
+		};
+		FA23A7BC2639881E00AD8BAD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA23A7C22639885200AD8BAD /* StartVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA23A7BD2639882B00AD8BAD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FA23A7BE2639883E00AD8BAD /* StartRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FA41CEE4263A1B6900F90975 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAD58B22263AB612003E3A97 /* TransformerList.swift */,
+				FAD58B34263AC161003E3A97 /* TransformerCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA41CEE5263A1B7000F90975 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FAD58B31263AB6A0003E3A97 /* TransformerListViewModel.swift */,
+				FAD58B37263ACA6D003E3A97 /* TransformerDataSource.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FA41CEE6263A1B7600F90975 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FAD58B25263AB639003E3A97 /* TransformerListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FAD58B3A263AD3E1003E3A97 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FAD58B3B263AD3F4003E3A97 /* StartViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FAD58B49263B206C003E3A97 /* War */ = {
+			isa = PBXGroup;
+			children = (
+				FAD58B4B263B207A003E3A97 /* ViewModel */,
+				FAD58B4A263B2072003E3A97 /* Controller */,
+			);
+			path = War;
+			sourceTree = "<group>";
+		};
+		FAD58B4A263B2072003E3A97 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAD58B4C263B208F003E3A97 /* RageWarVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FAD58B4B263B207A003E3A97 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +368,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA23A7412639518F00AD8BAD /* Build configuration list for PBXNativeTarget "Transformers" */;
 			buildPhases = (
+				F096098F2749F097CD2403DA /* [CP] Check Pods Manifest.lock */,
 				FA23A7292639518E00AD8BAD /* Sources */,
 				FA23A72A2639518E00AD8BAD /* Frameworks */,
 				FA23A72B2639518E00AD8BAD /* Resources */,
+				68B288A86DE85811C17E4A5B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA23A73D2639518F00AD8BAD /* LaunchScreen.storyboard in Resources */,
+				FA23A75F263953AC00AD8BAD /* Colors.xcassets in Resources */,
 				FA23A73A2639518F00AD8BAD /* Assets.xcassets in Resources */,
 				FA23A7382639518E00AD8BAD /* Main.storyboard in Resources */,
 			);
@@ -132,14 +429,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		68B288A86DE85811C17E4A5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Transformers/Pods-Transformers-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Transformers/Pods-Transformers-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Transformers/Pods-Transformers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F096098F2749F097CD2403DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Transformers-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FA23A7292639518E00AD8BAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA23A7352639518E00AD8BAD /* ViewController.swift in Sources */,
+				FA23A7722639567800AD8BAD /* USER.swift in Sources */,
+				FA23A7B626397F9900AD8BAD /* Transformer.swift in Sources */,
+				FAD58B4D263B208F003E3A97 /* RageWarVC.swift in Sources */,
+				FAD58B32263AB6A0003E3A97 /* TransformerListViewModel.swift in Sources */,
+				FA23A7B326397F8400AD8BAD /* AddTransformerViewModel.swift in Sources */,
+				FA23A754263952D500AD8BAD /* requestParser.swift in Sources */,
+				FA41CED32639907600F90975 /* Validator.swift in Sources */,
+				FA23A7692639544C00AD8BAD /* BaseVC.swift in Sources */,
+				FA23A794263972A900AD8BAD /* AppUtil.swift in Sources */,
+				FA23A755263952D500AD8BAD /* NetworkProxy.swift in Sources */,
+				FA23A7AC26397EC100AD8BAD /* BaseViewModel.swift in Sources */,
+				FA23A7662639541800AD8BAD /* UIStoryboard+ext.swift in Sources */,
+				FA23A7632639540500AD8BAD /* UIViewController+ext.swift in Sources */,
+				FA23A7A726397BAD00AD8BAD /* Router.swift in Sources */,
+				FA23A750263952D500AD8BAD /* EndPoints.swift in Sources */,
+				FAD58B38263ACA6D003E3A97 /* TransformerDataSource.swift in Sources */,
+				FAD58B26263AB639003E3A97 /* TransformerListRouter.swift in Sources */,
+				FA23A7A22639748300AD8BAD /* AddTransformerVC.swift in Sources */,
+				FA23A7BF2639883E00AD8BAD /* StartRouter.swift in Sources */,
+				FAD58B23263AB612003E3A97 /* TransformerList.swift in Sources */,
+				FA23A79E2639732700AD8BAD /* UIWindow+ext.swift in Sources */,
+				FA23A7C32639885200AD8BAD /* StartVC.swift in Sources */,
+				FAD58B35263AC161003E3A97 /* TransformerCell.swift in Sources */,
+				FAD58B3C263AD3F4003E3A97 /* StartViewModel.swift in Sources */,
 				FA23A7312639518E00AD8BAD /* AppDelegate.swift in Sources */,
-				FA23A7332639518E00AD8BAD /* SceneDelegate.swift in Sources */,
+				FA23A751263952D500AD8BAD /* RequestTypes.swift in Sources */,
+				FA23A753263952D500AD8BAD /* ServiceManager.swift in Sources */,
+				FA23A76D263954A900AD8BAD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,12 +647,14 @@
 		};
 		FA23A7422639518F00AD8BAD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7348EA24220F80B2B5AAC5A /* Pods-Transformers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TB7Y6J97SQ;
 				INFOPLIST_FILE = Transformers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +668,14 @@
 		};
 		FA23A7432639518F00AD8BAD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88AD4118F3732CF7CFA7C9F4 /* Pods-Transformers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TB7Y6J97SQ;
 				INFOPLIST_FILE = Transformers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
