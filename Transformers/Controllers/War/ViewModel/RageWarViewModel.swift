@@ -20,12 +20,16 @@ class RageWarViewModel: BaseViewModel {
     private var winingNamesDecepticons = ""
     private var servivors = ""
     private var allDestroyed = false
+    private var currentWarWonbyMasterRule = false
     var bindResultToController : ((String) -> ()) = {_ in }
     // MARK: - Cycles
     override init() {
         super.init()
         listViewModel = TransformerListViewModel()
         listViewModel.getList()
+    }
+    
+    func rageWar(){
         listViewModel.bindViewTransformersToController = { items in
         
             
@@ -46,6 +50,10 @@ class RageWarViewModel: BaseViewModel {
             
             // Face OFF ONE ON ONE
             self.numberofBattles = loopCount
+            if loopCount == 0 {
+                appUtil.shared.showAlert(message: "No opponent found!")
+                return
+            }
             for index in 0...loopCount - 1 {
             
                 self.result += autobots[index].toString()
@@ -53,18 +61,21 @@ class RageWarViewModel: BaseViewModel {
             }
             
             // Getting Remaining Bots which can't Fight
+            //Decepticons Remaining
             var remaingBotsCount = loopCount
             if remaingBotsCount < autobots.count {
                 remaingBotsCount = autobots.count
                 for index in loopCount...remaingBotsCount - 1 {
                     self.result += autobots[index].toString()
+                    //servivors with in Autobots
                     self.servivors += "\(decepticons[index])"
                 }
-            }
+            } //Autobots Remainings
             else if remaingBotsCount < decepticons.count {
                 remaingBotsCount = decepticons.count
                 for index in loopCount...remaingBotsCount - 1 {
                     self.result += decepticons[index].toString()
+                    //servivors with in decepticon
                     self.servivors += "\(decepticons[index].name!)"
                 }
             }
@@ -76,50 +87,39 @@ class RageWarViewModel: BaseViewModel {
                 // Apply Master Rule
                 self.startBattleMasterRule(A: autobots[index], D: decepticons[index])
                 // Battle
-                self.ranAwayRuleWithBattle(A: autobots[index], D: decepticons[index])
-                
+                if self.currentWarWonbyMasterRule == false {
+                    self.ranAwayRuleWithBattle(A: autobots[index], D: decepticons[index])
+                }else{
+                    self.currentWarWonbyMasterRule.toggle()
+                }
             }
-            
-            
-            
-            
-            
             
             
             
             self.decideWin()
             self.bindResultToController(self.result)
             
-            
-            
-        
-        
         }
     }
-    
-    private func Servivors(){
-        
-    }
-    
     
     private func decideWin(){
         
         if self.allDestroyed == false {
         
         if self.autobotWins > self.decepticonWins {
-            self.result += "\n\n Winning Team(Autobots) \(self.winingNamesAutobots)"
+            self.result += "\n\nWinning Team(Autobots) \(self.winingNamesAutobots)"
             if servivors != "" {
-                self.result += "Survivors from the losing team (Decepticons): \(servivors) "
+                self.result += "\n\nSurvivors from the losing team (Decepticons): \(servivors) "
             }
         
         }
         else if self.decepticonWins > self.autobotWins {
-            self.result += "\n\n Winning Team(Decepticons) \(self.winingNamesDecepticons)"
+            self.result += "\n\nWinning Team(Decepticons) \(self.winingNamesDecepticons)"
             if servivors != "" {
-                self.result += "Survivors from the losing team (Autobots): \(servivors) "
+                self.result += "\n\nSurvivors from the losing team (Autobots): \(servivors) "
             }
         }else{
-            self.result += "\n\n Winning Team(TIE) Total Tie Rounds\(self.totalTies)"
+            self.result += "\n\nWinning Team(TIE) Total Tie Rounds\(self.totalTies)"
         }
      }
     }
@@ -168,6 +168,7 @@ class RageWarViewModel: BaseViewModel {
             if !D.isPredaking {
                 self.autobotWins += 1
                 winingNamesAutobots += "\(A.name!) "
+                currentWarWonbyMasterRule = true
                 return
             }
         }
@@ -187,6 +188,7 @@ class RageWarViewModel: BaseViewModel {
             if !A.isPredaking {
                 self.decepticonWins += 1
                 winingNamesDecepticons += "\(D.name!) "
+                currentWarWonbyMasterRule = true
                 return
             }
         }

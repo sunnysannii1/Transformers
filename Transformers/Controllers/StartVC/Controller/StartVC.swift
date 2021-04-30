@@ -19,14 +19,14 @@ class StartVC: BaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         getToken()
     }
     
-    
-    
     // MARK: - Actions
-    
-    
     @IBAction func StartAction(_ sender: UIButton) {
         
         var route = TransformerList.className

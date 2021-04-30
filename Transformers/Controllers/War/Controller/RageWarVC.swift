@@ -21,15 +21,10 @@ class RageWarVC: BaseVC {
         super.viewDidLoad()
         lblResult.text = "Getting Transformers ..."
         rageViewModel = RageWarViewModel()
+        rageViewModel.rageWar()
         rageViewModel.bindResultToController = { [self] (result)  in
             lblResult.text = result
         }
     }
-    
-    // MARK: - Helpers
-
-    
-    
-    
     
 }

@@ -31,7 +31,8 @@ struct USER {
         KeychainWrapper.standard.set(tokenStr, forKey: tokenKey)
     }
     //Clear User after game finishes
-    func clear(){
+    mutating func clear(){
+        self.token =  ""
         KeychainWrapper.standard.remove(forKey: KeychainWrapper.Key(rawValue: tokenKey))
     }
     
