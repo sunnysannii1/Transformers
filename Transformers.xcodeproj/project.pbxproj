@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1EEA456F90C085C251DDADAA /* Pods_Transformers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F49AA0767BEE23DBB4B49B /* Pods_Transformers.framework */; };
 		FA188E94263B7CFA009520E5 /* RageWarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA188E93263B7CFA009520E5 /* RageWarViewModel.swift */; };
+		FA188E9D263B924C009520E5 /* TransformersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA188E9C263B924C009520E5 /* TransformersTests.swift */; };
 		FA23A7312639518E00AD8BAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23A7302639518E00AD8BAD /* AppDelegate.swift */; };
 		FA23A7382639518E00AD8BAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA23A7362639518E00AD8BAD /* Main.storyboard */; };
 		FA23A73A2639518F00AD8BAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA23A7392639518F00AD8BAD /* Assets.xcassets */; };
@@ -43,11 +44,24 @@
 		FAD58B4D263B208F003E3A97 /* RageWarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD58B4C263B208F003E3A97 /* RageWarVC.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FA188E9F263B924C009520E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA23A7252639518E00AD8BAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA23A72C2639518E00AD8BAD;
+			remoteInfo = Transformers;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		73F49AA0767BEE23DBB4B49B /* Pods_Transformers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Transformers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88AD4118F3732CF7CFA7C9F4 /* Pods-Transformers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transformers.release.xcconfig"; path = "Target Support Files/Pods-Transformers/Pods-Transformers.release.xcconfig"; sourceTree = "<group>"; };
 		C7348EA24220F80B2B5AAC5A /* Pods-Transformers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transformers.debug.xcconfig"; path = "Target Support Files/Pods-Transformers/Pods-Transformers.debug.xcconfig"; sourceTree = "<group>"; };
 		FA188E93263B7CFA009520E5 /* RageWarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RageWarViewModel.swift; sourceTree = "<group>"; };
+		FA188E9A263B924C009520E5 /* TransformersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransformersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA188E9C263B924C009520E5 /* TransformersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformersTests.swift; sourceTree = "<group>"; };
+		FA188E9E263B924C009520E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA23A72D2639518E00AD8BAD /* Transformers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transformers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA23A7302639518E00AD8BAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA23A7372639518E00AD8BAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,6 +99,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FA188E97263B924C009520E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FA23A72A2639518E00AD8BAD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -113,10 +134,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FA188E9B263B924C009520E5 /* TransformersTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA188E9C263B924C009520E5 /* TransformersTests.swift */,
+				FA188E9E263B924C009520E5 /* Info.plist */,
+			);
+			path = TransformersTests;
+			sourceTree = "<group>";
+		};
 		FA23A7242639518E00AD8BAD = {
 			isa = PBXGroup;
 			children = (
 				FA23A72F2639518E00AD8BAD /* Transformers */,
+				FA188E9B263B924C009520E5 /* TransformersTests */,
 				FA23A72E2639518E00AD8BAD /* Products */,
 				23E917B61495C18B69DBDD5B /* Pods */,
 				3FF56EC5CE49D7A273BFE2BC /* Frameworks */,
@@ -127,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				FA23A72D2639518E00AD8BAD /* Transformers.app */,
+				FA188E9A263B924C009520E5 /* TransformersTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -367,6 +399,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FA188E99263B924C009520E5 /* TransformersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA188EA1263B924C009520E5 /* Build configuration list for PBXNativeTarget "TransformersTests" */;
+			buildPhases = (
+				FA188E96263B924C009520E5 /* Sources */,
+				FA188E97263B924C009520E5 /* Frameworks */,
+				FA188E98263B924C009520E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA188EA0263B924C009520E5 /* PBXTargetDependency */,
+			);
+			name = TransformersTests;
+			productName = TransformersTests;
+			productReference = FA188E9A263B924C009520E5 /* TransformersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FA23A72C2639518E00AD8BAD /* Transformers */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA23A7412639518F00AD8BAD /* Build configuration list for PBXNativeTarget "Transformers" */;
@@ -395,6 +445,10 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					FA188E99263B924C009520E5 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = FA23A72C2639518E00AD8BAD;
+					};
 					FA23A72C2639518E00AD8BAD = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -414,11 +468,19 @@
 			projectRoot = "";
 			targets = (
 				FA23A72C2639518E00AD8BAD /* Transformers */,
+				FA188E99263B924C009520E5 /* TransformersTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FA188E98263B924C009520E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FA23A72B2639518E00AD8BAD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -475,6 +537,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FA188E96263B924C009520E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA188E9D263B924C009520E5 /* TransformersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FA23A7292639518E00AD8BAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -513,6 +583,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		FA188EA0263B924C009520E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA23A72C2639518E00AD8BAD /* Transformers */;
+			targetProxy = FA188E9F263B924C009520E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		FA23A7362639518E00AD8BAD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -533,6 +611,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FA188EA2263B924C009520E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TB7Y6J97SQ;
+				INFOPLIST_FILE = TransformersTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahsan.TransformersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Transformers.app/Transformers";
+			};
+			name = Debug;
+		};
+		FA188EA3263B924C009520E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TB7Y6J97SQ;
+				INFOPLIST_FILE = TransformersTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahsan.TransformersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Transformers.app/Transformers";
+			};
+			name = Release;
+		};
 		FA23A73F2639518F00AD8BAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -694,6 +812,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FA188EA1263B924C009520E5 /* Build configuration list for PBXNativeTarget "TransformersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA188EA2263B924C009520E5 /* Debug */,
+				FA188EA3263B924C009520E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FA23A7282639518E00AD8BAD /* Build configuration list for PBXProject "Transformers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
