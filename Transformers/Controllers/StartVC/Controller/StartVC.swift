@@ -33,7 +33,7 @@ class StartVC: BaseVC {
         if sender.tag == 0 {
             route = AddTransformerVC.className
         }else if sender.tag == 2 {
-            route = AddTransformerVC.className
+            route = RageWarVC.className
         }
         
         StartRouter().route(to: route, from: self, parameters: nil)

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1EEA456F90C085C251DDADAA /* Pods_Transformers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F49AA0767BEE23DBB4B49B /* Pods_Transformers.framework */; };
+		FA188E94263B7CFA009520E5 /* RageWarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA188E93263B7CFA009520E5 /* RageWarViewModel.swift */; };
 		FA23A7312639518E00AD8BAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23A7302639518E00AD8BAD /* AppDelegate.swift */; };
 		FA23A7382639518E00AD8BAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA23A7362639518E00AD8BAD /* Main.storyboard */; };
 		FA23A73A2639518F00AD8BAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA23A7392639518F00AD8BAD /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		73F49AA0767BEE23DBB4B49B /* Pods_Transformers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Transformers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88AD4118F3732CF7CFA7C9F4 /* Pods-Transformers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transformers.release.xcconfig"; path = "Target Support Files/Pods-Transformers/Pods-Transformers.release.xcconfig"; sourceTree = "<group>"; };
 		C7348EA24220F80B2B5AAC5A /* Pods-Transformers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transformers.debug.xcconfig"; path = "Target Support Files/Pods-Transformers/Pods-Transformers.debug.xcconfig"; sourceTree = "<group>"; };
+		FA188E93263B7CFA009520E5 /* RageWarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RageWarViewModel.swift; sourceTree = "<group>"; };
 		FA23A72D2639518E00AD8BAD /* Transformers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transformers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA23A7302639518E00AD8BAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA23A7372639518E00AD8BAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -357,6 +359,7 @@
 		FAD58B4B263B207A003E3A97 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				FA188E93263B7CFA009520E5 /* RageWarViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -488,6 +491,7 @@
 				FA23A755263952D500AD8BAD /* NetworkProxy.swift in Sources */,
 				FA23A7AC26397EC100AD8BAD /* BaseViewModel.swift in Sources */,
 				FA23A7662639541800AD8BAD /* UIStoryboard+ext.swift in Sources */,
+				FA188E94263B7CFA009520E5 /* RageWarViewModel.swift in Sources */,
 				FA23A7632639540500AD8BAD /* UIViewController+ext.swift in Sources */,
 				FA23A7A726397BAD00AD8BAD /* Router.swift in Sources */,
 				FA23A750263952D500AD8BAD /* EndPoints.swift in Sources */,

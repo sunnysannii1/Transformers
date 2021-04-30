@@ -9,15 +9,27 @@ import UIKit
 
 class RageWarVC: BaseVC {
     
-    // MARK: - Oulets
+    // MARK: - Vars
     
+    
+    
+    var rageViewModel:RageWarViewModel!
+    // MARK: - Oulets
+    @IBOutlet weak var lblResult: UILabel!
     // MARK: - Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+        lblResult.text = "Getting Transformers ..."
+        rageViewModel = RageWarViewModel()
+        rageViewModel.bindResultToController = { [self] (result)  in
+            lblResult.text = result
+        }
     }
     
     // MARK: - Helpers
 
+    
+    
+    
+    
 }

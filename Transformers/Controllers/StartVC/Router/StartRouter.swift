@@ -14,6 +14,11 @@ class StartRouter: Router {
             let vc = UIStoryboard.main.instantiateViewController(withIdentifier: AddTransformerVC.className) as! AddTransformerVC
             context.navigationController?.pushViewController(vc, animated: true)
         }
+        else
+        if routeID == RageWarVC.className {
+            let vc = UIStoryboard.main.instantiateViewController(withIdentifier: RageWarVC.className) as! RageWarVC
+            context.navigationController?.pushViewController(vc, animated: true)
+        }
         else{
             let vc = UIStoryboard.main.instantiateViewController(withIdentifier: TransformerList.className) as! TransformerList
             context.navigationController?.pushViewController(vc, animated: true)

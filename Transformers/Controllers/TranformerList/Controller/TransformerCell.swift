@@ -57,12 +57,7 @@ class TransformerCell: UITableViewCell {
         lblRank.text = item.rank?.description
         lblFirepower.text = item.firepower?.description
         lblstrength.text = item.strength?.description
-        //FORMULA
-        //Strength + Intelligence + Speed + Endurance + Firepower
-        let formula1 = (item.strength ?? 0) + (item.intelligence ?? 0)  + (item.speed ?? 0)
-        let overAll =  (formula1) + (item.endurance  ?? 0) + (item.firepower ?? 0)
-        
-        lblOverAll.text = overAll.description
+        lblOverAll.text = item.overAllRating.description
         
         
         

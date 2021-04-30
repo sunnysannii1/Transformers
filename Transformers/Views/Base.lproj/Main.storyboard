@@ -682,6 +682,38 @@
             </objects>
             <point key="canvasLocation" x="986.95652173913049" y="63.616071428571423"/>
         </scene>
+        <!--War-->
+        <scene sceneID="Ad3-SC-kz5">
+            <objects>
+                <viewController storyboardIdentifier="RageWarVC" title="War" id="KvU-c4-O3C" customClass="RageWarVC" customModule="Transformers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MgA-Ro-lZc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="rfY-X9-qZt">
+                                <rect key="frame" x="20" y="59" width="374" height="803"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BW6-AQ-d0y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rfY-X9-qZt" firstAttribute="top" secondItem="BW6-AQ-d0y" secondAttribute="top" constant="15" id="5rP-Fu-OIe"/>
+                            <constraint firstAttribute="trailing" secondItem="rfY-X9-qZt" secondAttribute="trailing" constant="20" id="BYG-Aa-4vC"/>
+                            <constraint firstItem="BW6-AQ-d0y" firstAttribute="bottom" secondItem="rfY-X9-qZt" secondAttribute="bottom" id="GOZ-iw-Gcb"/>
+                            <constraint firstItem="rfY-X9-qZt" firstAttribute="leading" secondItem="MgA-Ro-lZc" secondAttribute="leading" constant="20" id="YFO-2V-RAf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblResult" destination="rfY-X9-qZt" id="XhV-EO-rnO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jcn-sz-cyW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1697" y="61"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="IF3-Eo-Gme">
             <objects>
