@@ -9,7 +9,7 @@
     * 
 * Model
     * Tranformer
-        * Represents transformer antomy
+        * Represents transformer Anatomy
 * Controller
     *  StartVC initial screen displaying menu 
     *  AddTransformerVC screen add/update transformer
