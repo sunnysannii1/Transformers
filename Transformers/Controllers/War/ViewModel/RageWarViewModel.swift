@@ -10,6 +10,7 @@ import UIKit
 class RageWarViewModel: BaseViewModel {
 
     // MARK: - Vars
+    //
     private var listViewModel:TransformerListViewModel!
     private var result  = "INPUT:\n"
     private var autobotWins = 0
