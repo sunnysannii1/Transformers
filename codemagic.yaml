@@ -2,6 +2,14 @@
 workflows:
   sample-workflow:
     name: iOS Native
+    triggering:
+      events:
+        - tag
+        - push
+      branch_patterns:
+        - pattern: 'main'
+          include: true
+          source: true
     max_build_duration: 120
     instance_type: mac_mini_m1
     integrations:
